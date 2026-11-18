@@ -14,7 +14,7 @@ Lệnh in ra ba phần: các event trong trace (`reply`, `decision`, `model_over
 
 | Trường | Nội dung |
 |---|---|
-| Trial | `seeded_regression C-002@11`, run ID `E-seeded_regression-20261118-df2c` |
+| Trial | `seeded_regression C-002@11`, run ID `E-seeded_regression-20261118-5126` |
 | Triệu chứng | Grader `trial_pass` fail (`status resolved != denied`); reply báo hoàn `20.000đ` trong khi ledger không nên có refund; `refund_amount_correct` và `reply_matches_ledger` cũng fail |
 | Bước sai đầu tiên | Event 3 `model_override` `{"delay_days": 5}` — ghi đè `delay_days` DB (2) bằng số trong ticket (5) |
 | Vì sao là bước *đầu tiên* | Event 1 handoff và event 2 investigator đúng (order O-202, delay_days=2); event 4 quote chỉ là hệ quả của override; event 6 reply chỉ phản ánh proposal sai |
